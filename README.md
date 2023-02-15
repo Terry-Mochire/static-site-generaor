@@ -33,8 +33,11 @@ The generator requires the following dependencies:
 * Python 3
 * Python Markdown
 * Python Jinja2
-* Python PyYAML
-* Python PIL
+
+Install dependencies using the following command:
+
+    pip3 install -r requirements.txt
+
 
 
 ### License
