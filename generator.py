@@ -24,6 +24,5 @@ def render_template(template_file, output_file, context):
     template = env.get_template(template_file)
     html = template.render(context)
 
-
     with open(output_file, 'w') as f:
         f.write(html)
