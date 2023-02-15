@@ -41,3 +41,5 @@ The generator requires the following dependencies:
 
 The generator is licensed under the MIT License. See the LICENSE file for more information.
 
+### Author
+TERRY MOCHIRE, FEB 2023.
