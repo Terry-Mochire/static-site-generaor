@@ -23,7 +23,7 @@ def render_template(template_file, output_file, context):
     env = Environment(loader=loader)
     template = env.get_template(template_file)
     html = template.render(context)
-    print(html)
+
 
     with open(output_file, 'w') as f:
         f.write(html)

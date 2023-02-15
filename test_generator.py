@@ -32,7 +32,6 @@ class Test(TestCase):
             template_file.write('<h1>{{ title }}</h1>\n<p>{{ content}}</p>')
 
             template_file_name = template_file.name.split('/')[-1]
-            print(template_file_name)
             template_file.flush()
 
             # Create a temporary output file
