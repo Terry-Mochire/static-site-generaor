@@ -1,0 +1,95 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+nav{
+    margin-bottom: 100px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+}
+
+button {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-color: #1f224d;
+}
+
+a {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    color: #1f224d;
+}
+
+a:hover {
+    color: #1f224d;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+}
+
