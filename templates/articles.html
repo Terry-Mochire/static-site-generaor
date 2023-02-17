@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="stylesheet" href="static/css/aguilaraldo1_section_contact.css">
-    <link rel="stylesheet" href="static/css/Dark-footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="/static/css/aguilaraldo1_section_contact.css">
+    <link rel="stylesheet" href="/static/css/Dark-footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="/static/css/stylesheet.css">
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
@@ -22,9 +23,14 @@
         </div>
     </nav>
     <header class="pt-5">
+        {% if content %}
         <div class="container pt-4 pt-xl-5">
-            {{ content }}
+
+
         </div>
+        {% else %}
+        <p>This is just the template. Upload a folder with a file called articles.md</p>
+        {% endif %}
     </header>
     <footer>
         <div class="container py-4 py-lg-5">
