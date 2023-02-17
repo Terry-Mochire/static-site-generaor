@@ -65,7 +65,6 @@ def generate_site(input_directory, output_directory):
     shutil.copytree('templates/static/', 'output/static/')
 
 
-
 if __name__ == '__main__':
     if len(sys.argv) < 3:
         print('Usage: python3 generator.py input_directory output_directory')
