@@ -36,29 +36,34 @@ def generate_site(input_directory, output_directory):
     if not os.path.exists('output/'):
         os.makedirs('output/')
 
+    if not os.path.exists('html/'):
+        os.makedirs('html/')
     # Convert markdown to html
 
     markdown_files = [f for f in os.listdir(input_directory) if f.endswith('.md')]
     for markdown_file in markdown_files:
         input_file = os.path.join(input_directory, markdown_file)
-        output_file = os.path.join(output_directory, markdown_file.replace('.md', '.html'))
+        output_file = os.path.join('html', markdown_file.replace('.md', '.html'))
         markdown_to_html(input_file, output_file)
 
     # Render Jinja2 template with data
     pages = []
-    for html_file in os.listdir(output_directory):
+    for html_file in os.listdir('html'):
         if html_file.endswith('.html'):
             pages.append(html_file)
 
     for page in pages:
         template_file = page
         output_file = os.path.join(output_directory, page)
-        context = {'title': page}
+        title = page.replace('.html', '')
+        values = open('html/' + page).read()
+        context = {'title': title, 'content': values}
         render_template(template_file, output_file, context)
 
     # Copy static files
 
-    shutil.copytree('static/', output_directory + '/static/')
+    shutil.copytree('templates/static/', 'output/static/')
+
 
 
 if __name__ == '__main__':
