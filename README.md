@@ -16,6 +16,14 @@ To use the generator, run the following command:
 
 The generator will then convert all Markdown files in the input directory into HTML files in the output directory.
 
+To use the flask server, run the following command:
+
+    python3 app.py
+
+The flask server will then run on `http://localhost:5000/`
+and will display the generated website.
+The site allows a user to upload a Markdown file and navigate to the generated HTML pages.
+
 ### Features
 
 The generator supports the following features:
@@ -23,7 +31,10 @@ The generator supports the following features:
 * Markdown to HTML conversion
 * Templates
 * CSS styling
-* Images
+* Flask server
+* File upload
+* Navigation
+
 
 
 ### Dependencies
@@ -33,6 +44,7 @@ The generator requires the following dependencies:
 * Python 3
 * Python Markdown
 * Python Jinja2
+* Flask
 
 Install dependencies using the following command:
 
