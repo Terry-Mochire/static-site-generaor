@@ -1,3 +1,0 @@
-## Contact page
-
-## Contact information.
