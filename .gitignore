@@ -2,3 +2,5 @@
 
 *.xml
 *.iml
+# Local Netlify folder
+.netlify
